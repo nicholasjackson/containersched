@@ -3,11 +3,56 @@ application_name: 'containersched'
 namespace: 'github.com/nicholasjackson'
 generator_name: minke-generator-go
 docker_registry:
-  url: 
-  user: 
-  password: 
-  email: 
-  namespace: 
+  url: 'https://index.docker.io/v1/'
+  user:
+    secure:
+      fingerprint: bd:63:42:21:b3:09:bf:d4:d5:29:3f:79:c5:b6:c6:b0
+      value: >
+        Glll5xQ2C+Tn1Dd6OWenHw25+CaUPCHNPtx9ojwf0aaVCzuK6SbVqCSS80vg
+        ezrBciOGMeiH1Glmi6sQgGNSYZBbwCmQKXyrEL3L+d66/qU+bWlGIkc17DGj
+        gHsIa63/Oh3HKX60yh9xPDfsMuUKCYjJL4ahqzDbWax5SUXzHGicLe6gQS6B
+        0WA5tzkzfXh1IT9M6LqXALGTxxSD3iaq2ILl37ZrTfgojabCP7Xj2CW3U3EI
+        Xjo1ds0TxrgCFWQOZ82ohiu0np/2tJfORoGocY2p00l18ksLFIN6p+y36K4Q
+        9LYJ2OsYjiDUE/Zx3lEN4Ju5xy54fid1hIGKeMtjjEWzM2531JEgTjFsMh/r
+        v/QqcGfxgGTA4Mhi2kjh1UUta0Za//bIkYzroGipwPQU+ePviNOYMm5iFWyW
+        b8lxwVZ50p/b+0V4UidP2Iy7rY9BGoaOKvuosqAPi0CxjozhwCwFmQLtsREf
+        wgjWVHZYw+JWU3Yd20Q91H2WTIilKcQ0eL4G/+kztOIs+T43Sszgqu4Uzu7o
+        NnfWzKR3af7+EGulvlVV+ceVKIawaiyXSOo/WfheVnwO4XR1fskz/tzafla8
+        C3YAIlrB58+CAWh+vdmOIsar9jNVq2Zrv7dRgYT9XO3QY+eADNuMv612zDbR
+        kU3rDnf1n2JARCqOFQCD270=
+  password:
+    secure:
+      fingerprint: bd:63:42:21:b3:09:bf:d4:d5:29:3f:79:c5:b6:c6:b0
+      value: >
+        Pp7uEBxSGoYrVZgHZkIxyZcKqdKq+L4IsnuN30flulBJK0YiBOGdR0+Qd82j
+        oaZ5BrA8WeC+cmCoE6+TUT5LbkjpxmhzjUZ4jXSdmP6rmLMOlHfpR9JZe+sd
+        6xVDY01qkPm5bGtK9QxP72tavaRHexRtgprJPWkKPgXW52M1XJIAgS/7J7mo
+        W5khv6v+2AG8nLWj+F2a4Tpv63IiEgbmTTNE7Kx2vT16v9hXt6TdV1Tex9vZ
+        2KbEtj42wF8PQjSPbDIHzlbae21l6r50hNG6ef/nC0kasXVFA/pmENZCbFAa
+        zig96QUkldiBXA0SdRHxvFEe82S3lAlHATwTNZaTn48ctkJoJ4Qe97g4jGGi
+        kAokABO18wHJDRdN2AJ7kqetInzlu0qzd06zYtjp+WjQj2Z9qLxPrvYDmMwS
+        dgFYd3BRWPGVC8DcRYJheD787XWAlpI6UJ7uHm2my81hlh0A2hTkbO/hNpKZ
+        ENNV1gL/2Zq8pz76C+JAYrKPXBY4Ja4ptpDvB4mDsKXToWbvc+F4xxI4O32O
+        bqejFjWvadjBJi3w0CFVrZU/OBbZIFh9JpNkgwiFreBQFkg1RkjXLE+nLsro
+        YSBG4bnmqbOetQbbRNIZ62+LLwYTa3GI/NpYNiiWSSCbMizhpiECkGSLNYgM
+        vX6/6Dy7Ft5//IAuYx+MXuI=
+  email:
+    secure:
+      fingerprint: bd:63:42:21:b3:09:bf:d4:d5:29:3f:79:c5:b6:c6:b0
+      value: >
+        ri9mM9jgTvwO2kZ8Il6958R3QyLf3n6jUFBcsmpJLtAQssHIlnU1sibfaVwY
+        rvtRG7UZYV+1vCUgbjURmuTJ+vhJf6eWdWe/Ybs+Q7LT1xKcCD2zNiPOsBX1
+        GLchZCRtfwV37VIs19kjPLauumaigYgIpv4/2e2ESVCgxa6uC0ifkfPubdAe
+        2JvCDKqum4NwfRdCHtQfs16LqYVJLjOhrCkFUtvifJpG+IpnTzMjJXorUT2q
+        pG1JYydLp7fdCDP19AmxaVtcALFedly5v2YK9vA2Y93v1++4E3L9qf5X/DcZ
+        bsoH4FA/xxvq+wUgg4h8mNanaK0kLwihfI6/JJTuaGLxOeiCLWeyGlPA/GpA
+        BS5HptCSGKssSkRUeKyO1AZXXjkJNkhIFrrj6OMvktQeER+GuuOLfqVkov/Z
+        bU22W6vVecEW6gW1nRERWkEjMqtLBu1EQo8IO6x1tE0eErkzU3MjzORuCNs+
+        Hs62PScG4hAI/4pvEhZBZNg9suf2dB9KeCoCohamaNSfVYLr69mH03L9VvQl
+        GOaaYHNW/NB9WlYUgXxEeIl/7RaBh/HOFY/WWgzEN3z21h+/4UX5xeRDm6Rs
+        mtcW/ZIw1HdFQzNJqkl7ASZvs347PZqbP0qgSTkvmPMdUSJtLxQ8HAfVQfO3
+        qHjdiZrrI3KsceKlvATSc08=
+  namespace: 'nicholasjackson'
 docker:
   build_image: 'golang:latest'
   application_docker_file: './dockerfile/containersched/'
