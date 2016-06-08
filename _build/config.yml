@@ -1,0 +1,48 @@
+---
+application_name: 'containersched'
+namespace: 'github.com/nicholasjackson'
+generator_name: minke-generator-go
+docker_registry:
+  url: 
+  user: 
+  password: 
+  email: 
+  namespace: 
+docker:
+  build_image: 'golang:latest'
+  application_docker_file: './dockerfile/containersched/'
+  application_compose_file: './dockercompose/containersched/docker-compose.yml'
+fetch:
+  enabled: true
+test:
+  enabled: true
+build:
+  post:
+    copy:
+      -
+        from: '../containersched'
+        to: './dockerfile/containersched'
+      -
+        from: './swagger_spec/swagger.yml'
+        to: './dockerfile/containersched/swagger_spec'
+run:
+  pre:
+    consul_loader:
+      config_file: './consul_keys.yml'
+      url:
+        address: consul
+        port: 8500
+        type: private
+cucumber:
+  pre:
+    consul_loader:
+      config_file: './consul_keys.yml'
+      url:
+        address: consul
+        port: 8500
+        type: private
+    health_check:
+      address: containersched
+      port: 8001
+      path: /v1/health
+      type: private
