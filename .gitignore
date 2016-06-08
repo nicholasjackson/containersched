@@ -1,1 +1,4 @@
 /containersched
+_build/dockerfile/containersched/containersched
+/_build/vendor/cache
+/vendor
