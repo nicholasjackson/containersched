@@ -1,5 +1,8 @@
 # 0-Microservice in 5 minutes :- June 8th 2016
 
+## Build Status:  
+[![CircleCI](https://circleci.com/gh/nicholasjackson/containersched.svg?style=svg)](https://circleci.com/gh/nicholasjackson/containersched)
+
 ## Video:
 [https://skillsmatter.com/skillscasts/8097-0-to-microservice-in-5-minutes](https://skillsmatter.com/skillscasts/8097-0-to-microservice-in-5-minutes)
 
