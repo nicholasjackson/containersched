@@ -9,6 +9,12 @@
 ## How to build - Pure Docker
 Whilst having ruby installed on your dev machine can be handy there is no requirement to install this or any other dependency than Docker.  You can use the simple bash script which starts a Ruby docker container to run the build and test script, because this maps a reference to the docker sock on your local machine any commands to start docker container from within the ruby container will be proxied to your local machine, a docker server is not running inside the Ruby container.
 
+### NOTE: Beta version of docker for mac, additional step
+If you use Docker for Mac then the ip address for your docker host will appear to be 127.0.0.1, you can not use this ip to resolve resources when inside a container as localhost is a different localhost.  To get around this alias localhost on your mac to a different ip address and then reference this as your docker host in the build script.
+```bash
+$ sudo ifconfig lo0 alias 10.254.254.254 # then use like $ ./build.sh build_image -i 10.254.254.254
+```
+
 ### Build the image containing the tools
 Unfortunately we need to install Docker-Compose so we can't just use the base Ruby
 
