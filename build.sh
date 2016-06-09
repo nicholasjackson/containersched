@@ -29,4 +29,4 @@ while getopts ":i:" opt; do
   esac
 done
 
-eval "docker run --rm -it -v $DOCKER_SOCK -v $(pwd):$(pwd) -w $(pwd)/_build -e=DOCKER_IP=$IP_ADDRESS rubydev /bin/bash -c '$BUNDLE_COMMAND && rake app:$COMMAND'"
+eval "docker run --rm -it -v $DOCKER_SOCK -v $(pwd):$(pwd) -w $(pwd)/_build -e=DOCKER_IP=$IP_ADDRESS nicholasjackson/rubyminke /bin/bash -c '$BUNDLE_COMMAND && rake app:$COMMAND'"

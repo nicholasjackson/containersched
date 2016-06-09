@@ -18,18 +18,12 @@ If you use Docker for Mac then the ip address for your docker host will appear t
 $ sudo ifconfig lo0 alias 10.254.254.254 # then use like $ ./build.sh build_image -i 10.254.254.254
 ```
 
-### Step 1: Build the build container
-Unfortunately we need to install Docker-Compose so we can't just use the base Ruby
-```bash
-$ docker build -t rubydev ./_build/dockerfile/build
-```
-
-### Step 2: Build a Docker image
+### Step 1: Build a Docker image
 ```bash
 $ ./build.sh build_image -i 192.168.99.100 # Where 192.168.99.100 is the ip address of your docker host
 ```
 
-### Step 3: Run the functional tests
+### Step 2: Run the functional tests
 ```bash
 $ ./build.sh cucumber -i 192.168.99.100 # Where 192.168.99.100 is the ip address of your docker host
 ```
