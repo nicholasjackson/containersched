@@ -9,5 +9,4 @@ RUN apt-get update -q \
 		"https://github.com/docker/compose/releases/download/${COMPOSE_VERSION}/docker-compose-Linux-x86_64" \
 	&& chmod +x /usr/local/bin/docker-compose
 
-RUN curl -L https://github.com/docker/machine/releases/download/v${MACHINE_VERSION}/docker-machine-`uname -s`-`uname -m` >/usr/local/bin/docker-machine && \
-  chmod +x /usr/local/bin/docker-machine
+RUN curl -fsSL https://get.docker.com/ | sh
