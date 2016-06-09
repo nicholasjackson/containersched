@@ -15,19 +15,18 @@ If you use Docker for Mac then the ip address for your docker host will appear t
 $ sudo ifconfig lo0 alias 10.254.254.254 # then use like $ ./build.sh build_image -i 10.254.254.254
 ```
 
-### Build the image containing the tools
+### Step 1: Build the build container
 Unfortunately we need to install Docker-Compose so we can't just use the base Ruby
-
 ```bash
 $ docker build -t rubydev ./_build/dockerfile/build
 ```
 
-### Build a Docker image
+### Step 2: Build a Docker image
 ```bash
 $ ./build.sh build_image -i 192.168.99.100 # Where 192.168.99.100 is the ip address of your docker host
 ```
 
-### Run the functional tests
+### Step 3: Run the functional tests
 ```bash
 $ ./build.sh cucumber -i 192.168.99.100 # Where 192.168.99.100 is the ip address of your docker host
 ```
@@ -50,6 +49,7 @@ $ rake app:cucumber
 ```
 
 For more build options please see the minke documentation http://nicholasjackson.github.io/minke/  
+
 
 ## Resources:
 
