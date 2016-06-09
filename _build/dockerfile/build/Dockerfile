@@ -8,5 +8,3 @@ RUN apt-get update -q \
 	&& curl -o /usr/local/bin/docker-compose -L \
 		"https://github.com/docker/compose/releases/download/${COMPOSE_VERSION}/docker-compose-Linux-x86_64" \
 	&& chmod +x /usr/local/bin/docker-compose
-
-RUN curl -fsSL https://get.docker.com/ | sh
