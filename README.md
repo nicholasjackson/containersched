@@ -3,6 +3,9 @@
 ## Build Status:  
 [![CircleCI](https://circleci.com/gh/nicholasjackson/containersched.svg?style=svg)](https://circleci.com/gh/nicholasjackson/containersched)
 
+## Gitter:  
+[![Join the chat at https://gitter.im/nicholasjackson/minke](https://badges.gitter.im/nicholasjackson/minke.svg)](https://gitter.im/nicholasjackson/minke?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## Video:
 [https://skillsmatter.com/skillscasts/8097-0-to-microservice-in-5-minutes](https://skillsmatter.com/skillscasts/8097-0-to-microservice-in-5-minutes)
 
